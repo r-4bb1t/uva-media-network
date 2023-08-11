@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Home() {
   const [index, setIndex] = useState(0);
   return (
-    <div className="bg-black">
+    <div className="bg-black text-white">
       <Swiper
         direction="vertical"
         spaceBetween={0}
