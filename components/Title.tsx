@@ -25,6 +25,9 @@ export default function Title() {
       <div className="absolute bottom-12 flex justify-center p-1 rounded-full h-8 border-2 border-white">
         <div className="mouse-scroll w-1 h-1 rounded-full bg-white" />
       </div>
+      <div className="absolute left-0 lg:-bottom-36 top-0 lg:top-auto">
+        <img className="lg:w-[500px] w-[250px]" src="/slogan.png" />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import classcat from "classcat";
-import Logo from "./Logo";
 
 export default function Contact({ isShowing }: { isShowing: boolean }) {
   return (
@@ -17,8 +16,8 @@ export default function Contact({ isShowing }: { isShowing: boolean }) {
         </div>
         010-9855-2752
       </div>
-      <div className="absolute bottom-12">
-        <Logo />
+      <div className="absolute bottom-8">
+        <img className="w-48" src="/logo.png" />
       </div>
     </div>
   );

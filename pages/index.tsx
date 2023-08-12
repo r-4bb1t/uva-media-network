@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import Qualification from "@/components/Qualification";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
+import Logo from "@/components/Logo";
 
 export default function Home() {
   const [index, setIndex] = useState(0);
