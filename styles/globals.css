@@ -84,7 +84,7 @@ body {
   transform: rotate(15deg) rotateX(355deg) scale(0.6);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .circle .char {
     font-size: 1.5rem;
     transform: rotateY(calc(var(--char-index) * 360deg / var(--length)))
