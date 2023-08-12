@@ -1,4 +1,4 @@
-const text = "UNITED FILMING CIRCLE UNITED FILMING CIRCLE ";
+const text = "UNITED FILMING CLUB UNITED FILMING CLUB ";
 
 export default function Circle() {
   return (
