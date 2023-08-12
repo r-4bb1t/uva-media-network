@@ -3,13 +3,10 @@ import Circle from "./Circle";
 export default function Title() {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center px-8 relative">
-      <div className="flex flex-col items-center justify-center title-container">
+      <div className="w-full h-full flex flex-col items-center justify-center title-container">
         <Circle />
-        <div className="absolute flex flex-col font-['Black_Han_Sans'] tracking-wider font-black text-white text-5xl lg:text-[8rem]">
-          <div className="bordered">UVA</div>
-          <div className="bordered lg:-mt-3">MEDIA</div>
-          <div className="lg:-mt-3">NET</div>
-          <div className="lg:-mt-3">WORK</div>
+        <div className="absolute w-[260px] lg:w-[650px] h-full">
+          <img src="/title.png" className="w-full h-full object-contain" />
         </div>
       </div>
       <div className="w-full h-screen flex items-end lg:items-start absolute font-[pretendard] py-32">
