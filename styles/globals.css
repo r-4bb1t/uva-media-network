@@ -6,8 +6,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  ul.gap-list li:not(:last-child) {
+    @apply mb-2;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard";
+}
+
 @font-face {
-  font-family: "amikobold";
+  font-family: "amiko";
   src: url("Amiko-Bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -61,7 +75,7 @@
   transform-style: preserve-3d;
   transform-origin: center;
   transform: rotateY(calc(var(--char-index) * 360deg / var(--length)))
-    translateZ(600px) scaleX(2);
+    translateZ(450px) scaleX(2);
 }
 
 .circle-container {
@@ -76,4 +90,41 @@
     transform: rotateY(calc(var(--char-index) * 360deg / var(--length)))
       translateZ(200px) scaleX(2);
   }
+}
+
+@keyframes mouse-scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+  80%,
+  100% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+}
+
+.mouse-scroll {
+  animation: mouse-scroll 1.5s linear infinite;
+}
+
+.swiper-slide {
+  height: 100vh !important;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.up {
+  animation: up 0.5s 0.2s ease backwards;
 }
