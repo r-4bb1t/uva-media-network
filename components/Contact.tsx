@@ -19,6 +19,16 @@ export default function Contact({ isShowing }: { isShowing: boolean }) {
       <div className="absolute bottom-8">
         <img className="w-48" src="/logo.png" />
       </div>
+      <footer className="w-full text-center py-6 absolute bottom-0 text-xs lg:text-base">
+        Made by
+        <a
+          href="https://r4bb1t.dev/"
+          target="_blank"
+          className="inline-block ml-1 lg:ml-2 bg-white text-black px-1 lg:px-2 rounded"
+        >
+          @r-4bb1t
+        </a>
+      </footer>
     </div>
   );
 }
